@@ -5,5 +5,5 @@ export function api(path: string, init?: RequestInit) {
   const apiPrefix = '/api';
   const url = new URL(apiPrefix.concat(path), baseUrl);
 
-  return fetch(url, init)
+  return fetch(url, init);
 }
